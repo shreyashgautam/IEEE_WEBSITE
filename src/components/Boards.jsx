@@ -12,7 +12,7 @@ function Boards(){
           <div class="colunm hidden">
             <img src={president} alt="Profile"/>
             <div>
-              <h3>lorem</h3>
+              <h3>Ishitva Pandey</h3>
               <p className="p1">President</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sapiente commodi molestiae repellendus distinctio reprehenderit tenetur doloribus necessitatibus minus, voluptates eveniet iusto incidunt, ducimus quae facilis. Dolorem doloribus odit quia!</p>
                </div>
@@ -20,7 +20,7 @@ function Boards(){
           <div class="colunm hidden">
             <img src={president} alt="Profile"/>
             <div>
-              <h3 >lorem</h3>
+              <h3 >Anchutha AR Nair</h3>
               <p >Vice President</p>
               <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sapiente commodi molestiae repellendus distinctio reprehenderit tenetur doloribus necessitatibus minus, voluptates eveniet iusto incidunt, ducimus quae facilis. Dolorem doloribus odit quia!</p>
             </div>
@@ -28,7 +28,7 @@ function Boards(){
           <div class="colunm hidden">
             <img src={president} alt="Profile"/>
             <div>
-              <h3>lorem</h3>
+              <h3>Kshitij Shukla</h3>
               <p>Treasurer</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sapiente commodi molestiae repellendus distinctio reprehenderit tenetur doloribus necessitatibus minus, voluptates eveniet iusto incidunt, ducimus quae facilis. Dolorem doloribus odit quia!</p>
             </div>
