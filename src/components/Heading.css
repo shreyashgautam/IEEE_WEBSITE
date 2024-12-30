@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: black;
+    color:white;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(../assets/image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'Bona Nova SC',sans-serif;
+}
+
+nav{
+    display: flex;
+    font-family: 'Bona Nova SC',sans-serif;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 190px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding:8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:red ;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color:#fff;
+    margin-top: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box p{
+    font-family: 'Poppins';
+    font-style: italic;
+}
+
+.heading_robo{
+    font-size: 4rem;
+    margin-top: 5rem;
+    font-weight: bolder;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    width: 200px;
+    font-weight: bolder;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-decoration: none;
+    margin-bottom: 5rem;
+}
+
+.button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(157, 234, 41); 
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+.button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgb(153, 255, 0); 
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.button:hover {
+    color: #fff;
+}
+
+.button:hover:before {
+    width: 100%;
+}
+
+
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.counter-container div {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.counter-container h2 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.counter-container p {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .text-box {
+        margin-top: 2rem;
+    }
+
+    .heading_robo {
+        font-size: 2rem; 
+    }
+
+    .text-box p {
+        font-size: 1.2rem; 
+        margin-top: 10px;
+    }
+
+    .button {
+        font-size: 1.5rem;
+        width: 180px;
+    }
+
+    .counter-container {
+        flex-direction: column;
+        gap: 30px;
+        margin: 20px auto;
+        max-width: 90%;
+    }
+
+    .counter-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .counter-container p {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        text-align: center;
+    }
+
+    .nav-links ul {
+        display: block;
+    }
+
+    .nav-links ul li {
+        padding: 10px;
+    }
+
+    .nav-links ul li a {
+        font-size: 15px;
+    }
+
+    .subcontainer {
+        text-align: center;
+    }
+
+    .flexdisplay {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .subcontainer img {
+        margin-top: 1.5rem;
+    }
+}
+.count{
+  cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+.count:hover{
+  transform: scale(1.2);
+}

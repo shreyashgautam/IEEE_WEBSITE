@@ -1,0 +1,62 @@
+.About {
+    padding: 2rem;
+}
+
+
+.flexdisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.subcontainer {
+    flex: 1;
+    
+    padding: 1rem;
+}
+
+.subcontainer h3 {
+    font-family: cursive;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.subcontainer p {
+    color: rgb(189, 184, 184);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.subcontainer img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.abouttext {
+    transition: 1s;
+    color: rgb(188, 177, 177);
+}
+
+.abouttext:hover {
+    color: white;
+}
+
+.fac-image{
+    transition: transform 2s ease-in-out;
+    cursor: pointer;
+display: flex;
+justify-content: center;    
+
+  }
+  .fac-image:hover{
+    transform: scale(1.06); 
+    box-shadow: 0px 0px 20px white;
+  }

@@ -1,0 +1,87 @@
+
+/* teams */
+.team p{
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.colunm {
+    flex-basis:33%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center-align image and text */
+    transition: 1s;
+    justify-content: center;
+    
+}
+
+.colunm:hover {
+    box-shadow: 0px 0px 20px black;
+}
+
+.colunm img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures image content fits within the circle */
+    margin-bottom: 15px; /* Add space between the image and text */
+    transition: transform 1s ease-in-out;
+}
+.colunm img:hover{
+  transform: scale(1.2); 
+}
+.colunm p {
+    padding: 0;
+    margin-top: 12px;
+    color: rgb(167, 167, 167);
+    transition: 0.5s;
+    text-align: center; /* Center text for better aesthetics */
+}
+.colunm p1{
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.colunm h3 {
+    margin-top: 15px;
+    margin-left: 0;
+    text-align: center; /* Center heading text */
+    color: rgb(157, 234, 41);
+    font-family: cursive;
+    transition: 2s;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.colunm h3:hover{
+    color:white;
+}
+.colunm p:hover{
+    color:white;
+}
+
+@media (max-width:600px){
+    .row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .colunm{
+        margin-bottom: 10%;
+        text-align: center;
+        
+        padding: 0px;
+        cursor: pointer;
+        display: flex;
+    }
+    
+}
